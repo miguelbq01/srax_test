@@ -18,3 +18,15 @@ Route::get('popular_hero_weapon', 'HeroController@popularWeapon');
 Route::post('heroes', 'HeroController@create');
 Route::put('heroes/{id}', 'HeroController@update');
 Route::delete('heroes/{id}', 'HeroController@delete');
+
+// Monster Routes
+Route::get('monsters', 'MonsterController@index');
+Route::get('monsters/{id}', 'MonsterController@show');
+
+Route::get('max_number_monsters', 'MonsterController@maxNumberMonster');
+Route::get('popular_monster_race', 'MonsterController@popularRace');
+Route::get('popular_monster_ability', 'MonsterController@popularAbility');
+
+Route::post('monsters', 'MonsterController@create');
+Route::put('monsters/{id}', 'MonsterController@update');
+Route::delete('monsters/{id}', 'MonsterController@delete');

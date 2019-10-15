@@ -8,13 +8,12 @@ class Hero extends Model
     use SoftDeletes;
 
     protected $fillable = [
-    'active',
     'first_name',
     'last_name',
     'level',
     'race_id',
     'class_id',
-    'weapon',
+    'weapon_id',
     'strength',
     'intelligence',
     'dexterity'];
