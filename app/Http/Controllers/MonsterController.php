@@ -93,7 +93,7 @@ class MonsterController extends Controller
         $monster = Monster::findOrFail($id);
         $monster->delete();
 
-        return 204;
+        return 200;
     }
 
     // Mostrar cuantos monstruos existen

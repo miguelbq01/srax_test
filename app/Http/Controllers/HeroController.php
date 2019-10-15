@@ -97,7 +97,7 @@ class HeroController extends Controller
         $hero = Hero::findOrFail($id);
         $hero->delete();
 
-        return 204;
+        return 200;
     }
 
     // Listado de todas las Razas de Heroes existentes
@@ -166,7 +166,7 @@ class HeroController extends Controller
         $popular_weapon = HeroWeapon::find($popular['weapon_id']);
 
         return response()-> json([
-            "race_id" => $popular['weapon_id'],
+            "weapon_id" => $popular['weapon_id'],
             "popular_hero_weapon" => $popular_weapon['name']
         ]);
     }
